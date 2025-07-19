@@ -27,6 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        style={{
+          // backgroundImage: "radial-gradient(#e5e7eb20 1px, transparent 1px)",
+        }}
         className={`
         ${geistSans.variable}
         ${geistMono.variable}

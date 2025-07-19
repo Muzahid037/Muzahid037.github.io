@@ -16,16 +16,29 @@ const CircleImage: React.FC<CircleImageProps> = ({
   priority = false,
 }) => {
   return (
+    // <div
+    //   className="rounded-full overflow-hidden relative border-4 border-white shadow-lg"
+    //   style={{ width: size, height: size }}
+    // >
     <div
-      className="rounded-full overflow-hidden relative border-4 border-white shadow-lg"
-      style={{ width: size, height: size }}
+      className="
+      w-[192px] 
+      h-[192px]
+      md:w-[256px] 
+      md:h-[256px]
+      rounded-full
+      relative 
+      border-4
+      border-cyan-400 
+      shadow-lg 
+      shadow-cyan-500/50
+      "
     >
       <Image
         src={src}
         alt={alt}
         fill
-        className="object-cover object-center"
-        sizes={`${size}px`}
+        className=" object-center rounded-full"
         priority={priority}
       />
     </div>
