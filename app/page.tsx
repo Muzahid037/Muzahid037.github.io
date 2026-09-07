@@ -1,31 +1,25 @@
 import HeroSection from "@/components/HeroSection";
-import muzahid from "@/public/muzahid.jpg";
+import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
+import Skills from "@/components/sections/Skills";
+import Projects from "@/components/sections/Projects";
+import Education from "@/components/sections/Education";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <div
-      style={
-        {
-          // border:"1px solid red"
-        }
-      }
-      className="
-      flex 
-      flex-col 
-      justify-center 
-      items-center       
-      min-h-screen
-      "
-    >
+    <div>
       <HeroSection
         name="Md. Muzahidul Islam"
-        title="Software Developer"
-        description="
-        Software craftsman with over 3 years in the industry, specializing in ReactJS and NextJS.
-        "
+        title="Software Engineer @ Kite Games Studio"
+        description="Software craftsman based in Dhaka, Bangladesh, working with Next.js and Docker, with a background in game development."
       />
-
-      
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Education />
+      <Contact />
     </div>
   );
 }

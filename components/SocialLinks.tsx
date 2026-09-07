@@ -42,7 +42,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ isWhite = true }) => {
         <FaTwitter />
       </a>
       <a
-        href="mailto:muzahid.cuetcse16@gmail.com"
+        href="mailto:muzahidul.cuet17@gmail.com"
         aria-label="Email"
         className=" transition-colors"
       >

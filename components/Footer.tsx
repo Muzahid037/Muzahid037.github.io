@@ -16,7 +16,7 @@ const Footer = () => {
           className="text-sm text-center md:text-left select-none"
           aria-label="Copyright notice"
         >
-          © {2025} Md Muzahidul Islam. All rights reserved.
+          © {year} Md Muzahidul Islam. All rights reserved.
         </p>
 
         <nav aria-label="Social media links" className="">

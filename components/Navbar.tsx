@@ -1,26 +1,28 @@
 "use client";
 
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // Optional: use any icon library
+import { Menu, X } from "lucide-react";
+
+const links = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Education", href: "#education" },
+  { name: "Contact", href: "#contact" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Works", href: "/works" },
-    { name: "Education", href: "/education" },
-    { name: "Contact", href: "/contact" },
-  ];
-
   return (
-    <nav className="bg-white shadow-md  w-full z-50">
+    <nav className="bg-white shadow-md w-full z-50 sticky top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <div className="text-xl font-bold text-gray-800">
+          <a href="#home" className="text-xl font-bold text-gray-800">
             Md. Muzahidul Islam
-          </div>
+          </a>
 
           <div className="md:hidden">
             <button
@@ -52,6 +54,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={() => setOpen(false)}
               className="block text-gray-700 py-2 border-b border-gray-200 hover:text-blue-500"
             >
               {link.name}
@@ -59,7 +62,6 @@ const Navbar = () => {
           ))}
         </div>
       )}
-
     </nav>
   );
 };
